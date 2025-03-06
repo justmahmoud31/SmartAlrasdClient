@@ -100,7 +100,7 @@ function PhoneNumber() {
   return (
     <div className="py-6 max-w-xl mx-auto">
       <h2 className="flex justify-center text-2xl font-bold mb-10">
-        أدخل رقم هاتفك ورقم فريد خاص بك
+        أدخل البيانات التالية
       </h2>
       <form onSubmit={handleRegister}>
         {/* Private Number */}

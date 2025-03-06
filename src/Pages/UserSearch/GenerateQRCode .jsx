@@ -27,8 +27,8 @@ const GenerateQRCode = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h2 className="text-xl font-semibold">قم بمسح الكود للوصول الى البيانات </h2>
+    <div className="flex flex-col justify-center items-center my-16">
+      <h2 className="text-xl my-4 font-semibold">قم بمسح الكود للوصول الى البيانات </h2>
       {qrUrl ? <img src={qrUrl} alt="User QR Code" /> : <p>Loading...</p>}
     </div>
   );

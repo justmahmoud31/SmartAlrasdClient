@@ -37,7 +37,6 @@ const ScanQRCode = () => {
             `${import.meta.env.VITE_BASE_URL}/api/users/get-user/${decodedText}`
           );
           setScannedData(response.data.user);
-          console.log(response.data.user);
         } catch (err) {
           setError("رمز QR غير صالح أو انتهت صلاحيته");
         } finally {

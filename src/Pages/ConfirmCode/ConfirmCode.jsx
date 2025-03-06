@@ -21,7 +21,7 @@ function ConfirmCode() {
     axios
       .post(`${import.meta.env.VITE_BASE_URL}/api/code/acceptrequest/${idCode}`, { code })
       .then((res) => {
-        setSuccess("Code confirmed successfully!");
+        setSuccess("تم تفعيل النظام بنجاح");
         setTimeout(() => {
           navigate("/login")
         }, 2000);
@@ -34,7 +34,7 @@ function ConfirmCode() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4">
       <form onSubmit={handleConfirmCode} className="bg-white p-6 rounded-lg shadow-md w-80">
-        <h2 className="text-xl font-bold mb-4">ادخل رمز التحقق الخاص بك</h2>
+        <h2 className="text-xl font-bold mb-4">ادخل رمز التفعيل</h2>
         <input
           type="text"
           value={code}

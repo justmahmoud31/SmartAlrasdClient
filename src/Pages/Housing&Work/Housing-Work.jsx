@@ -45,7 +45,7 @@ function Housing_Work() {
 
   return (
     <div className="py-6 max-w-xl mx-auto">
-      <h2 className="flex justify-center text-3xl font-bold mb-10">دخل البيانات التالية</h2>
+      <h2 className="flex justify-center text-3xl font-bold mb-10">أدخل البيانات التالية</h2>
       <form onSubmit={handleRegister}>
         {/* Lives In */}
         <div className="mb-5">
