@@ -11,7 +11,7 @@ function ConfirmCode() {
   const [code, setCode] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-
+  const id = localStorage.getItem("request");
 
   function handleConfirmCode(e) {
     e.preventDefault();
@@ -19,7 +19,7 @@ function ConfirmCode() {
     setSuccess("");
 
     axios
-      .post(`${import.meta.env.VITE_BASE_URL}/api/code/acceptrequest/${idCode}`, { code })
+      .post(`${import.meta.env.VITE_BASE_URL}/api/code/acceptrequest/${idCode || id}`, { code })
       .then((res) => {
         setSuccess("تم تفعيل النظام بنجاح");
         setTimeout(() => {

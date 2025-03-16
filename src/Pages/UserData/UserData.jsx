@@ -66,7 +66,7 @@ function UserData() {
         setEditingField(null);
       } else {
         setnoreload(false);
-        setPendingApprovalMessage("تم تعديل بيانات أخرى غير الاسم الكامل أو تاريخ الميلاد. يرجى إعادة تحميل الصفحة.");
+        setPendingApprovalMessage(". يرجى إعادة تحميل الصفحة.");
       }
 
       axios

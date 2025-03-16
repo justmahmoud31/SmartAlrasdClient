@@ -121,12 +121,11 @@ const ScanQRCode = () => {
                   : ""}</span>
                 {scannedData.height}
               </p>
-              <p className="flex items-center">
+              {/* <p className="flex items-center">
                 <img src={privatenumber} width={15} />
                 <span className="font-semibold mr-1">الرقم الخاص:</span>
                 {scannedData.privatenumber}
-              </p>
-              <br />
+              </p> */}
               {/* <p className="flex items-center">
               <MdEmail className="ml-2" />
               <span className="font-semibold mr-1">البريد الإلكتروني:</span>

@@ -136,11 +136,11 @@ function UserSearch() {
               <span className="font-semibold mr-1"></span>
               {userData.height} 
             </p>
-            <p className="flex items-center">
+            {/* <p className="flex items-center">
               <img src={privatenumber} width={15} />
               <span className="font-semibold mr-1 pl-1">الرقم الخاص : </span>
               {userData.privatenumber}
-            </p>
+            </p> */}
             {/* <br /> */}
             {/* <p className="flex items-center">
               <MdEmail className="ml-2" />

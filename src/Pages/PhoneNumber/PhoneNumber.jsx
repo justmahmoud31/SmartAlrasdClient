@@ -53,7 +53,7 @@ function PhoneNumber() {
   const handleRegister = async (event) => {
     event.preventDefault();
     if (!isChecked) {
-      setAPIError("يجب الموافقة على الشروط والأحكام");
+      setAPIError("يجب الموافقة على سياسه الخصوصية والاستخدام");
       return;
     }
 
