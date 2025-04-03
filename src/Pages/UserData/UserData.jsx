@@ -241,9 +241,9 @@ function UserData() {
               className="ml-2 text-blue-500"
             >
               {editingField === "fullname" ? (
-                <div className="text-green-500">
-                  <FaSave />
-                </div>
+                <button className="text-green-500 px-2 py-1 rounded bg-green-100">
+                  حفظ
+                </button>
               ) : (
                 <FaEdit />
               )}
@@ -280,9 +280,9 @@ function UserData() {
               className="ml-2 text-blue-500"
             >
               {editingField === "email" ? (
-                <div className="text-green-500">
-                  <FaSave />
-                </div>
+                <button className="text-green-500 px-2 py-1 rounded bg-green-100">
+                  حفظ
+                </button>
               ) : (
                 <FaEdit />
               )}
@@ -317,9 +317,9 @@ function UserData() {
               className="ml-2 text-blue-500"
             >
               {editingField === "phonenumber" ? (
-                <div className="text-green-500">
-                  <FaSave />
-                </div>
+                <button className="text-green-500 px-2 py-1 rounded bg-green-100">
+                  حفظ
+                </button>
               ) : (
                 <FaEdit />
               )}
@@ -355,9 +355,9 @@ function UserData() {
               className="ml-2 text-blue-500"
             >
               {editingField === "birthdate" ? (
-                <div className="text-green-500">
-                  <FaSave />
-                </div>
+                <button className="text-green-500 px-2 py-1 rounded bg-green-100">
+                  حفظ
+                </button>
               ) : (
                 <FaEdit />
               )}
@@ -432,9 +432,9 @@ function UserData() {
               className="ml-2 text-blue-500"
             >
               {editingField === "livesin" ? (
-                <div className="text-green-500">
-                  <FaSave />
-                </div>
+                <button className="text-green-500 px-2 py-1 rounded bg-green-100">
+                  حفظ
+                </button>
               ) : (
                 <FaEdit />
               )}
@@ -523,9 +523,9 @@ function UserData() {
               className="ml-2 text-blue-500"
             >
               {editingField === "status" ? (
-                <div className="text-green-500">
-                  <FaSave />
-                </div>
+                <button className="text-green-500 px-2 py-1 rounded bg-green-100">
+                  حفظ
+                </button>
               ) : (
                 <FaEdit />
               )}
@@ -608,9 +608,9 @@ function UserData() {
               {first ?
                 <FaEdit />
                 :
-                <div className="text-green-500">
-                  <FaSave />
-                </div>
+                <button className="text-green-500 px-2 py-1 rounded bg-green-100">
+                  حفظ
+                </button>
               }
             </button>
           </div>
@@ -646,9 +646,9 @@ function UserData() {
               {second ?
                 <FaEdit />
                 :
-                <div className="text-green-500">
-                  <FaSave />
-                </div>
+                <button className="text-green-500 px-2 py-1 rounded bg-green-100">
+                  حفظ
+                </button>
               }
             </button>
           </div>
