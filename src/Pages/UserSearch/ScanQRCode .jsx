@@ -56,24 +56,35 @@ const ScanQRCode = () => {
       fps: 10,
     });
 
-    scanner.render(
-      async (decodedText) => {
-        scanner.clear();
-        setLoading(true);
-        setError("");
-        try {
-          const response = await axios.get(
-            `${import.meta.env.VITE_BASE_URL}/api/users/get-user/${decodedText}`
-          );
-          setScannedData(response.data.user);
-        } catch (err) {
-          setError("رمز QR غير صالح أو انتهت صلاحيته");
-        } finally {
-          setLoading(false);
-        }
-      },
-      () => setError("")
-    );
+ scanner.render(
+  async (decodedText) => {
+    scanner.clear();
+    setLoading(true);
+    setError("");
+
+    try {
+      // Extract the token from the scanned URL
+      const url = new URL(decodedText);
+      const tokenFromQR = url.searchParams.get("token");
+
+      if (!tokenFromQR) {
+        throw new Error("Invalid QR code format");
+      }
+
+      const response = await axios.get(
+        `${import.meta.env.VITE_BASE_URL}/api/users/get-user/${tokenFromQR}`
+      );
+
+      setScannedData(response.data.user);
+    } catch (err) {
+      setError("رمز QR غير صالح أو انتهت صلاحيته");
+    } finally {
+      setLoading(false);
+    }
+  },
+  () => setError("")
+);
+
 
     return () => scanner.clear();
   }, [token]);
